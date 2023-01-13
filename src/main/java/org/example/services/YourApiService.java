@@ -22,6 +22,9 @@ public class YourApiService {
     @Value("${apitest.base.path}")
     private String basePath;
 
+    @Value("${apitest.token}")
+    private String myToken;
+
     private RequestSpecification spec;
 
     @PostConstruct
@@ -44,6 +47,9 @@ public class YourApiService {
     public Response getRequest(String endpoint) {
 
         return RestAssured.given(spec)
+            // In our case, we won't use the "token" variable, as the API doesn't require so.
+            // But if your API require, here you can use the token like this:
+            // .auth().basic("token", myToken)
             .contentType(ContentType.JSON)
         .when()
             .get(endpoint);
