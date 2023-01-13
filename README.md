@@ -2,4 +2,5 @@
 
 ### Related links
 
-- [Part 1](https://www.mercedes-benz.io/2022/11/30/api-testing-with-java-and-spring-boot-test-part-1-the-basic-setup/)
+- [The basic setup](https://dev.to/mercedesbenzio/api-testing-with-java-and-spring-boot-test-part-1-the-basic-setup-5db0/)
+- [Improving the project](https://dev.to/mercedesbenzio/api-testing-with-java-and-spring-boot-test-part-2-improving-the-solution)
